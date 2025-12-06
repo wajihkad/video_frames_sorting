@@ -16,3 +16,12 @@ However, the number of shared features alone is not sufficient. To refine the si
 
 Based on the similarity scores, an algorithm is used to reorder the frames.
 Starting from a randomly selected frame, we iteratively append its most similar neighbor to build a sequence. When we encounter a frame that is more similar to the first frame of the sequence than to the last, we assume we have reached one end of the original video. At that point, we reverse direction and begin adding frames to the front of the sequence instead of the back.
+
+# Environment
+
+You need to install the dependencies listed in `requirements.txt`:
+``pip install -r requirements.txt``
+
+# Code
+You can execute the different steps using the notebook: ``video_reconstruction.ipynb``
+
